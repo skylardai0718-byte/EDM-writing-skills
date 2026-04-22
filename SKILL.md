@@ -292,3 +292,37 @@ Email 4（D30）:  配件推荐 / 用户故事征集
 | `[品牌] EDM Best Practices & Postmortems` | 历史高/低效邮件分析 | 优化阶段参考 |
 | `Competitor EDM Benchmark` | 竞品对比参考 | 差异化定位 |
 | `[品牌] Content Asset Index` | 教程/视频/博客可用资产列表 | 教程型邮件 |
+
+---
+
+## 配套 Skills（推荐同时安装）
+
+本 Skill 专注 EDM 撰写执行，完整工作流还需要以下两个 Skills 配合：
+
+| Skill | 用途 | 何时调用 |
+|-------|------|---------|
+| `content-strategy` | 内容日历规划、主题优先级排序、内容支柱设计 | 在写单封 EDM 之前，规划整体内容节奏 |
+| `marketing-ideas` | 提供 139 个经过验证的营销创意，按预算/阶段/类别组织 | 卡创意、找不到差异化角度时 |
+
+### 安装方式
+
+在你的项目 `.github/skills/` 目录下分别创建对应文件夹和 `SKILL.md`，或直接使用支持 Skills 的 VS Code 扩展（GitHub Copilot Chat）自动发现。
+
+### 三个 Skill 的分工
+
+```
+content-strategy   →  规划"写什么"（主题/时间/受众优先级）
+        ↓
+edm-marketing      →  执行"怎么写"（本文件，四步撰写流程）
+        ↑
+marketing-ideas    →  补充"有哪些角度"（卡壳时随时调用）
+```
+
+### 推荐工具链
+
+| 工具 | 用途 |
+|------|------|
+| [Google NotebookLM](https://notebooklm.google.com/) | 从产品资料中提取品牌知识库 |
+| [ChatGPT](https://chatgpt.com/) | 生成喂给 NotebookLM 的提取 Prompt |
+| VS Code + GitHub Copilot Chat | 运行 Claude Code + Skills 的主环境 |
+| Mailchimp / Klaviyo | EDM 发送平台（Flow 设计参考章节以此为准）|
